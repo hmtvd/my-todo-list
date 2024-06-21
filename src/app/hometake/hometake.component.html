@@ -1,0 +1,21 @@
+<!-- <div>
+    <h2>Welcome to the Task Manager!</h2>
+    <p>Manage your tasks effectively.</p>
+    
+    <label for="taskInput">Enter a new task:</label>
+    <input type="text" id="taskInput" ngModel="taskTitle" name="myName"  (keyup.enter)="addTask()">
+    <button (click)="addTask()">Add Task</button>
+    <div>
+
+    </div>
+  </div>
+   -->
+
+
+   
+   <div>
+    <input id="taskmanage" [(ngModel)]="taskTitle" #title="ngModel" placeholder="New Task Title">
+    <button (click)="addTask()">Add Task</button>
+    <p class="error-message" *ngIf="showerror">Please type a valid title</p>
+  </div>
+  
